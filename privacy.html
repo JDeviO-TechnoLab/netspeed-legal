@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NetSpeed — Privacy Policy</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #0b0910; color: #f3edf3;
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 48px 22px 80px; }
+  header { display: flex; align-items: center; gap: 16px; margin-bottom: 10px; }
+  .logo {
+    width: 64px; height: 64px; border-radius: 16px;
+    background: linear-gradient(135deg, #f3a07a 0%, #e87c4c 49%, #e24c63 50%, #c4284c 100%);
+    position: relative; box-shadow: 0 10px 30px rgba(217,58,92,.35);
+  }
+  .logo:after {
+    content: ""; position: absolute; inset: 14px; border-radius: 50%;
+    border: 4px solid #f7f5ff; border-bottom-color: transparent; transform: rotate(45deg);
+  }
+  h1 { font-size: 30px; margin: 0; letter-spacing: -0.6px; }
+  .muted { color: #b9aebf; }
+  .lede { color: #cfc3d5; margin: 8px 0 28px; }
+  h2 { font-size: 19px; margin: 34px 0 10px; color: #ffd08a; }
+  p, li { color: #ded5e2; }
+  a { color: #ffb08c; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 14px; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid #2c2333; vertical-align: top; }
+  th { color: #cfc3d5; font-weight: 600; }
+  code { background: #1b1521; padding: 1px 5px; border-radius: 5px; font-size: 13px; }
+  .card {
+    background: #141019; border: 1px solid #2c2333; border-radius: 18px;
+    padding: 18px 20px; margin: 18px 0;
+  }
+  footer { margin-top: 48px; font-size: 13px; color: #8f8296; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo" aria-hidden="true"></div>
+    <div>
+      <h1>NetSpeed Privacy Policy</h1>
+      <div class="muted">Effective 24 November 2026</div>
+    </div>
+  </header>
+
+  <p class="lede">NetSpeed (package <code>com.jdevio.netspeed</code>) is an internet speed test and
+  network monitor. It requires no account and no login. This page explains exactly what happens to
+  your data.</p>
+
+  <div class="card">
+    <strong>The short version</strong>
+    <ul>
+      <li>We do not collect, sell, or share personal data.</li>
+      <li>Test history and preferences stay on your device.</li>
+      <li>Speed tests send anonymous sample traffic to Cloudflare and an OVH mirror fallback.</li>
+      <li>Ads are served by Google AdMob, which may use a device advertising ID.</li>
+      <li>Location permission is used only to read Wi-Fi names and scan nearby networks.</li>
+    </ul>
+  </div>
+
+  <h2>What is stored on your device</h2>
+  <table>
+    <tr><th>Data</th><th>Purpose</th><th>Location</th></tr>
+    <tr><td>Speed test results</td><td>History, grading, sharing</td><td>Local app storage</td></tr>
+    <tr><td>Preferences</td><td>Unit, theme, widget and monitor settings</td><td>Local app storage</td></tr>
+    <tr><td>Last widget values</td><td>Widget display</td><td>Local preferences</td></tr>
+  </table>
+  <p>Delete everything from <strong>History → Clear history</strong> or by uninstalling the app.</p>
+
+  <h2>Network requests</h2>
+  <ul>
+    <li><strong>Cloudflare speed endpoints</strong> — download/upload sample traffic and a zero-byte
+      latency request. Cloudflare receives your IP address and normal request metadata.</li>
+    <li><strong>Cloudflare trace</strong> — returns your public IP, country and edge location for the
+      test label and IP information screen.</li>
+    <li><strong>OVH mirror</strong> — fallback download source when Cloudflare rate-limits a test.</li>
+    <li><strong>Public DNS-over-HTTPS resolvers</strong> (Cloudflare, Google, Quad9) — only when you
+      run the DNS lookup tool.</li>
+    <li><strong>Google AdMob</strong> — banner and optional rewarded ads, subject to Google's policies.</li>
+  </ul>
+  <p>No diagnostics, browsing history, contacts, files or app usage are uploaded.</p>
+
+  <h2>Permissions</h2>
+  <ul>
+    <li><strong>Internet and network state</strong> — run tests and identify the connection.</li>
+    <li><strong>Wi-Fi state / nearby Wi-Fi devices</strong> — Wi-Fi details and nearby scan.</li>
+    <li><strong>Fine location</strong> — Android requires it to read the current SSID, BSSID and scan
+      results. GPS is never used and location is never transmitted.</li>
+    <li><strong>Notifications</strong> — show the live speed notification.</li>
+    <li><strong>Foreground service</strong> — keep the status-bar monitor running (Android requires an
+      ongoing notification).</li>
+    <li><strong>Boot completed</strong> — optionally resume the monitor after a restart.</li>
+  </ul>
+
+  <h2>Advertising</h2>
+  <p>The app shows one banner on the Speed Test screen and offers an optional rewarded ad that hides
+  the banner for 24 hours. Google AdMob may process your advertising ID as described in
+  <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. You can reset or delete
+  your advertising ID in Android Settings → Privacy → Ads.</p>
+
+  <h2>Children</h2>
+  <p>NetSpeed is not directed to children under 13 and does not knowingly collect data from children.</p>
+
+  <h2>Security</h2>
+  <p>All requests use HTTPS with the system trust store. Cleartext traffic is disabled.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the effective date is updated and the new policy ships with the app.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy or the app? Email
+  <a href="mailto:work@jdevio.com">work@jdevio.com</a>. We usually reply within two business days.</p>
+
+  <footer>© 2026 JDevio · NetSpeed for Android</footer>
+</div>
+</body>
+</html>
